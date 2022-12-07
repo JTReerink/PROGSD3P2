@@ -55,20 +55,22 @@ if (isset($_POST['submit'])) {
      * Hiervoor gebruik je de functie ucfirst()
      *
      */
-    
 
+    $naam = ucfirst($naam);
+    $straat = ucfirst($straat);
+    $woonplaats = ucfirst($woonplaats);
 
     /*
      * OPDRACHT 4:
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
      */
-//    echo
-//        $naam, '<br>',
-//        $straat, '<br>',
-//        $huisnummer, '<br>',
-//        $postcode, '<br>',
-//        $woonplaats, '<br>';
+    echo
+        $naam, '<br>',
+        $straat, '<br>',
+        $huisnummer, '<br>',
+        $postcode, '<br>',
+        $woonplaats, '<br>';
 
     /*
      * OPDRACHT 5:
