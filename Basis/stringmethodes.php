@@ -42,11 +42,11 @@ if (isset($_POST['submit'])) {
      * Hiervoor gebruik je de functie htmlspecialchars().
      * Pas elke ingevoerde variabele waarde aan met de functie htmlspecialchars().
      */
-    $naam = $_POST['naam'];
-    $straat = $_POST['straat'];
-    $huisnummer = $_POST['huisnummer'];
-    $postcode = $_POST['postcode'];
-    $woonplaats = $_POST['woonplaats'];
+    echo htmlspecialchars($naam = $_POST['naam']) ;
+    echo htmlspecialchars($straat = $_POST['straat']);
+    echo htmlspecialchars($huisnummer = $_POST['huisnummer']);
+    echo htmlspecialchars($postcode = $_POST['postcode']);
+    echo htmlspecialchars($woonplaats = $_POST['woonplaats']);
 
     /*
      * OPDRACHT 3:
