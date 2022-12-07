@@ -65,6 +65,12 @@ if (isset($_POST['submit'])) {
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
      */
+    $naam = ucfirst(strtolower($naam));
+    $straat = ucfirst(strtolower($straat));
+    $woonplaats = ucfirst(ucfirst($woonplaats));
+    $huisnummer = strtolower($huisnummer);
+    $postcode = strtolower($postcode);
+
     echo
         $naam, '<br>',
         $straat, '<br>',
