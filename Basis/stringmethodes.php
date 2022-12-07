@@ -12,16 +12,16 @@
     <input type="text" name="naam" id="naam" required placeholder="Naam"><br><br>
 
     <label for="straat">Straat:</label><br>
-    <input type=text name="straat" id="straat" required placeholder="Straat">><br><br>
+    <input type=text name="straat" id="straat" required placeholder="Straat"><br><br>
 
     <label for="huisnummer">Huisnummer:</label><br>
-    <input type=text name="huisnummer" id="huisnummer" required placeholder="Huisnummer">><br><br>
+    <input type=text name="huisnummer" id="huisnummer" required placeholder="Huisnummer"><br><br>
 
     <label for="postcode">Postcode:</label><br>
-    <input type=text name="postcode" id="postcode" required placeholder="Postcode">><br><br>
+    <input type=text name="postcode" id="postcode" required placeholder="Postcode"><br><br>
 
     <label for="woonplaats">Woonplaats:</label><br>
-    <input type=text name="woonplaats" id="woonplaats" required placeholder="Woonplaats">><br><br>
+    <input type=text name="woonplaats" id="woonplaats" required placeholder="Woonplaats"><br><br>
 
     <input type="submit" name="submit" value="verzenden" >
 </form>
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
      * Hiervoor gebruik je de functie htmlspecialchars().
      * Pas elke ingevoerde variabele waarde aan met de functie htmlspecialchars().
      */
-    echo htmlspecialchars($naam = $_POST['naam']) ;
+    echo htmlspecialchars($naam = $_POST['naam']);
     echo htmlspecialchars($straat = $_POST['straat']);
     echo htmlspecialchars($huisnummer = $_POST['huisnummer']);
     echo htmlspecialchars($postcode = $_POST['postcode']);
@@ -53,16 +53,21 @@ if (isset($_POST['submit'])) {
      * Zorg ervoor dat de naam, straat en woonplaats met een hoofdletter beginnen
      * Hiervoor gebruik je de functie ucfirst()
      *
+     */
+
+
+
+    /*
      * OPDRACHT 4:
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
      */
-    echo
-        $naam, '<br>',
-        $straat, '<br>',
-        $huisnummer, '<br>',
-        $postcode, '<br>',
-        $woonplaats, '<br>';
+//    echo
+//        $naam, '<br>',
+//        $straat, '<br>',
+//        $huisnummer, '<br>',
+//        $postcode, '<br>',
+//        $woonplaats, '<br>';
 
     /*
      * OPDRACHT 5:
