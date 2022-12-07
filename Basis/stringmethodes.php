@@ -85,6 +85,10 @@ if (isset($_POST['submit'])) {
      * Is er geen nummer ingevoerd geef dan een melding dat er een nummer moet worden ingevoerd
      */
 
+    if (!is_numeric($huisnummer)) {
+        echo '<script> alert("huisnummer moet een getal zijn") </script>';
+    }
+
 }
 ?>
 
