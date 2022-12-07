@@ -43,10 +43,9 @@ $ondertekening["naam"] = 'Jaap';
  * Voeg nu alle arrays samen in een nieuwe array die je $aanbieding noemt.
  * Gebruik hiervoor de methode array_merge()
  */
-var_dump(array_merge($korting, $aanhef, $ondertekening));
+$aanbiedingen = array_merge($korting, $aanhef, $ondertekening);
 
 /*
  * Opdracht 5:
  * Toon de inhoud van de nieuwe array $aanbieding
  */
-
