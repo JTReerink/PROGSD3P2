@@ -20,7 +20,7 @@ $ondertekening = array(
  * Laat de inhoud van alle arrays zien
  * Gebruik daarvoor de functies var_dump() en print_r()
  */
-var_dump($aanhef, $ondertekening, $korting);
+//var_dump($aanhef, $ondertekening, $korting);
 
 
 /*
@@ -30,14 +30,14 @@ var_dump($aanhef, $ondertekening, $korting);
  */
 $aanhef["persoon"] = 'klant';
 $ondertekening["naam"] = 'Jaap';
-var_dump($aanhef, $ondertekening);
+//var_dump($aanhef, $ondertekening);
 
 /*
  * Opdracht 3:
  * Vervang het woord [[product]] door jouw gekozen product in de winkelmand opdracht
  * Gebruik hiervoor de methode str_replace().
  */
-
+echo str_replace("bestelling", "kaarsen", $korting['product']);
 /*
  * Opdracht 4:
  * Voeg nu alle arrays samen in een nieuwe array die je $aanbieding noemt.
