@@ -28,6 +28,9 @@ var_dump($aanhef, $ondertekening, $korting);
  * Vervang de waarde van persoon, in de array aanhef naar 'klant'
  * Vervang de waarde van naam, in de array ondertekening naar 'jouw naam'
  */
+$aanhef["persoon"] = 'klant';
+$ondertekening["naam"] = 'Jaap';
+var_dump($aanhef, $ondertekening);
 
 /*
  * Opdracht 3:
