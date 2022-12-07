@@ -49,3 +49,4 @@ $aanbiedingen = array_merge($korting, $aanhef, $ondertekening);
  * Opdracht 5:
  * Toon de inhoud van de nieuwe array $aanbieding
  */
+var_dump($aanbiedingen);
