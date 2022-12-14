@@ -29,7 +29,7 @@
  */
 
 /*
- * Opdracht 5:
+ * Opdracht 5: DONE
  * Gebruik de functie array_reverse om hetzelfde resultaat als in opdracht 4 te verkrijgen.
  */
 
@@ -62,7 +62,13 @@ $omgekeerd = array();
 
 $dagen = array_keys($weekdagen);
 
-for($i=0;$i<count($weekdagen);$i++){
-    echo $weekdagen[$dagen[$i]];
+for($i=count($weekdagen)-1;$i>-1;$i--){
+    $to_push = array($dagen[$i] => $weekdagen[$dagen[$i]] );
+    array_push($omgekeerd,  $to_push);
     echo '<br>';
 }
+var_dump($omgekeerd);
+echo '<br>';
+echo '<br>';
+$andereOmgekeerd = array_reverse($weekdagen);
+var_dump($andereOmgekeerd);
