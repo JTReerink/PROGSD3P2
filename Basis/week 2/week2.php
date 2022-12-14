@@ -21,7 +21,7 @@
  */
 
 /*
- * Opdracht 4:
+ * Opdracht 4: DONE
  * Maak een nieuwe array en noem deze $omgekeerd.
  * De inhoud van deze array bestaat uit de elementen van de weekdagen array.
  * Gebruik hiervoor een for loop en array_push() om deze elementen te kopieren naar de nieuwe array
@@ -51,9 +51,18 @@ foreach($weekdagen as $value) {
         case 'woensdag';
         case 'donderdag';
         case 'vrijdag';
-        echo ucfirst($value); break;
+        echo ucfirst($value); echo '<br>'; break;
         case 'zaterdag';
         case 'zondag';
-        echo strtoupper($value); break;
+        echo strtoupper($value); echo '<br>'; break;
     }
+}
+
+$omgekeerd = array();
+
+$dagen = array_keys($weekdagen);
+
+for($i=0;$i<count($weekdagen);$i++){
+    echo $weekdagen[$dagen[$i]];
+    echo '<br>';
 }
