@@ -13,7 +13,7 @@
  */
 
 /*
- * Opdracht 3:
+ * Opdracht 3: DONE
  * Wijzig alle waardes in je array met behulp van een loop en een switch
  * Alle waardes moeten beginnen met een hoofdletter. Bij 'za' en 'zo' moeten de waardes
  * van de dagen geheel uit hoofdletters bestaan.
@@ -45,5 +45,15 @@ $weekdagen = array(
 
 
 foreach($weekdagen as $value) {
-    echo $value;
+    switch($value) {
+        case 'maandag';
+        case 'dinsdag';
+        case 'woensdag';
+        case 'donderdag';
+        case 'vrijdag';
+        echo ucfirst($value); break;
+        case 'zaterdag';
+        case 'zondag';
+        echo strtoupper($value); break;
+    }
 }
