@@ -53,6 +53,7 @@ if (isset($_POST['submit'])) {
                    echo "<br>";
                   }
              * 2. Kijk in de array $prijzen wat de prijs is die bij het product behoort.
+                
              * 3. Maak een functie die de totaalprijs berekent voor het gekozen product.
              * 4. Kies minimaal 4 keer een product en submit dit.
              * 5. Maak een functie die het totaal van elke bestelling in de array $dagtotaal stopt.
